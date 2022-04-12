@@ -1,0 +1,37 @@
+{
+  "name": "viva-backend-test",
+  "version": "1.0.0",
+  "description": "viva test",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server",
+    "nodemon": "nodemon server/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsalazar4446/viva-backend-test.git"
+  },
+  "keywords": [
+    "mongo",
+    "node",
+    "questions",
+    "answers"
+  ],
+  "author": "Daniel Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsalazar4446/viva-backend-test/issues"
+  },
+  "homepage": "https://github.com/dsalazar4446/viva-backend-test#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.6",
+    "underscore": "^1.12.0"
+  }
+}
