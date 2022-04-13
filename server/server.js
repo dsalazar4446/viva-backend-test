@@ -16,9 +16,6 @@ app.use(bodyParser.json());
 // configuracion global de rutas
 app.use(require('./routes'))
 
-// habilitar carpeta public
-
-app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 
@@ -31,7 +28,7 @@ mongoose.connect(process.env.MONGO_URL, {
     useFindAndModify: false,
     useCreateIndex: true
 }).then(resp => {
-    console.log('DB correctamente iniciada');
+    console.log('DB correctamente iniciada', process.env.MONGO_URL,);
 }).catch(err => {
     throw new Error(err)
 });
